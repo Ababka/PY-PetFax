@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
-    
+    <h1>Submit Fax</h1>
+        <p>Do you have a fun fact on an animal?</p>
+        <p>Submit it here!</p>
+    <div>
+        <form action="/facts" method="POST">
+            <label for="submitter"><h2 class="text">Name</h2></label>
+            <input name="submitter" type="text">
+                <label for="fact"><h2 class="text">Fact</h2></label>
+                <textarea name="fact"></textarea><br>
+                <input type="submit">
+        </form>
+    <a href="/pets">Go back</a>
 </body>
 </html>

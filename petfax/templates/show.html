@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show</title>
+    <title>Show n Tell</title>
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
-    <h1>test</h1>
+    <a href="/pets">Home</a>
+    <h1>{{ pet.pet_name }}</h1>
+    <p class="text">Did you know?<br>{{ pet.pet_fact }}</p>
+    <div>
+        <img src="{{ pet.pet_photo }}" alt="Photo of pet"/>
+    </div>
 </body>
 </html>
